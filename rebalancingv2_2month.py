@@ -1,3 +1,4 @@
+###Make sure to enter the amount of months you want it to rebalance for. 
 import yfinance as yf
 import pandas as pd
 import numpy as np
@@ -75,4 +76,5 @@ with open(f"rebalancing_for_18_months.txt", "w") as f:  ###writes the results to
         f.write(f"==== {col} ====\n")
         f.write(df.describe().to_string())
         f.write("\n\n")
+
 
